@@ -18,4 +18,4 @@ def about():
     return render_template('pages/about.html', author=author, year=year, title=title, description=description)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
