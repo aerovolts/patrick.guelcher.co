@@ -1,14 +1,10 @@
 {% extends "_base.html" %}
 
-{% block head %}
-  {% include '_head.html' %}
-{% endblock %}
+{% block head %}{% include '_head.html' %}{% endblock %}
 
 {% block title %}{{ title }}{% endblock %}
 
-{% block nav %}
-  {% include '_nav.html' %}
-{% endblock %}
+{% block nav %}{% include '_nav.html' %}{% endblock %}
 
 {% block content %}
 <section class="section__center mdl-grid mdl-grid__no-spacing">
@@ -34,6 +30,4 @@
 </section>
 {% endblock %}
 
-  {% block footer %}
-  {% include '_footer.html' %}
-  {% endblock %}
+{% block footer %}{% include '_footer.html' %}{% endblock %}
