@@ -1,0 +1,39 @@
+{% extends "_base.html" %}
+
+{% block head %}
+  {% include '_head.html' %}
+{% endblock %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block nav %}
+  {% include '_nav.html' %}
+{% endblock %}
+
+{% block content %}
+<section class="section__center mdl-grid mdl-grid__no-spacing">
+  <div class="mdl-card mdl-cell mdl-cell--5-col mdl-shadow--4dp">
+    <div class="mdl-card__title">
+      <h1 class="mdl-card__title-text">Bienvenue!</h1>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>Hello! My name is Patrick Guelcher, and welcome to my little slice of the internet.</p>
+      <p> Check out the other pages on the site and maybe learn more <a href="/about">about me</a>.
+      <p></p>
+    </div>
+  </div>
+  <div class="mdl-card mdl-cell mdl-cell--7-col mdl-shadow--4dp">
+    <div class="mdl-card__title">
+      <h4 class="mdl-card__title-text">An Introduction...</h4>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>I am a university student from the United States pursuing my passion for geography at the best school in the country: Virginia Tech. I love to spend hours looking at maps, learning about flags (my other passion - Vexillology), and reading up on current geopolitical news.</p>
+      <p>A fun geography tip: <a href="https://en.wikipedia.org/wiki/Fennoscandia">Fennoscandia</a> is the region encompassing the countries of: Norway, Sweden, and Finland. It also holds a place as my favorite geography term.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+  {% block footer %}
+  {% include '_footer.html' %}
+  {% endblock %}

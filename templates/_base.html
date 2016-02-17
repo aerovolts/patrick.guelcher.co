@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    {% block head %}
+
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {% block nav %}{% endblock %}
+
+      <main class="mdl-layout__content">
+        <div class="content">
+          {% block content %}{% endblock %}
+        </div>
+      </main>
+
+      {% block footer %}{% endblock %}
+    </div>
+  </body>
+</html>
