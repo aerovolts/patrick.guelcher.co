@@ -8,7 +8,7 @@ year = '2016'
 @app.route('/')
 def home():
     title = 'Home | Patrick Guelcher'
-    description = 'Patrick Guelcher\'s home on the internet.'
+    description = 'The home of Patrick Guelcher on the internet.'
     return render_template('pages/index.html', author=author, year=year, title=title, description=description)
 
 @app.route('/about')
