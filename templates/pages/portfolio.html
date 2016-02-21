@@ -1,0 +1,44 @@
+{% extends "_base.html" %}
+
+{% block head %}{% include '_head.html' %}{% endblock %}
+
+{% block nav %}{% include '_nav.html' %}{% endblock %}
+
+{% block content %}
+<section class="section__center mdl-grid mdl-grid__no-spacing">
+
+  <style>
+  .portfolio-text {
+    margin-bottom: 50px;
+  }
+
+  .portfolio-img {
+    width:90%;
+  }
+  </style>
+
+  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
+    <div class="mdl-card__title">
+      <h4 class="mdl-card__title-text">Portfolio</h4>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-grid">
+
+        <a href="../../static/img/portfolio/Dane_County_WI_Hillshade.png" target="_blank">
+          <img class="portfolio-img" src="../../static/img/portfolio/Dane_County_WI_Hillshade.png" alt="Topographic hillshade of Dane County, WI">
+        </a>
+        <p class="portfolio-text">A topographic hillshade map of Dane County, WI, created in ArcGIS using aerial imagery from the <a href="http://viewer.nationalmap.gov/basic/" target="_blank">USGS National Map</a>.</p>
+
+        <a href="../../static/img/portfolio/loudon_county_va_Hillshade.png" target="_blank">
+          <img class="portfolio-img" src="../../static/img/portfolio/Loudon_County_VA_Hillshade.png" alt="Topographic hillshade of Dane County, WI">
+        </a>
+        <p>A topographic hillshade map of Loudon County, VA, created in ArcGIS using aerial imagery from the <a href="http://viewer.nationalmap.gov/basic/" target="_blank">USGS National Map</a>.</p>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+{% endblock %}
+
+{% block footer %}{% include '_footer.html' %}{% endblock %}
