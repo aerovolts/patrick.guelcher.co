@@ -14,13 +14,13 @@ def home():
 @app.route('/about')
 def about():
     title = 'About Me | Patrick Guelcher'
-    description = 'About Patrick Guelcher.'
+    description = 'A short background and list of skills about Patrick Guelcher.'
     return render_template('pages/about.html', author=author, year=year, title=title, description=description)
 
 @app.route('/portfolio')
 def portfolio():
     title = 'Portfolio | Patrick Guelcher'
-    description = 'Cartographic products produced by Patrick Guelcher in various software packages.'
+    description = 'A portfolio of cartographic products produced by Patrick Guelcher in various software packages.'
     return render_template('pages/portfolio.html', author=author, year=year, title=title, description=description)
 
 if __name__ == '__main__':
