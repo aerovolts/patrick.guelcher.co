@@ -11,11 +11,11 @@ def home():
     description = 'The home of Patrick Guelcher on the internet.'
     return render_template('pages/index.html', author=author, year=year, title=title, description=description)
 
-@app.route('/about')
+@app.route('/resume')
 def about():
-    title = 'About Me | Patrick Guelcher'
+    title = 'Resume | Patrick Guelcher'
     description = 'A short background and list of skills about Patrick Guelcher.'
-    return render_template('pages/about.html', author=author, year=year, title=title, description=description)
+    return render_template('pages/resume.html', author=author, year=year, title=title, description=description)
 
 @app.route('/portfolio')
 def portfolio():
