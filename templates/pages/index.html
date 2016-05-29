@@ -1,30 +1,41 @@
 {% extends "_base.html" %}
 
-{% block head %}{% include '_head.html' %}{% endblock %}
+{% block head %}{% include "_head.html" %}{% endblock %}
 
-{% block nav %}{% include '_nav.html' %}{% endblock %}
+{% block nav %}{% include "_nav.html" %}{% endblock %}
 
 {% block content %}
-<section class="section__center mdl-grid mdl-grid__no-spacing">
-
-  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-    <div class="mdl-card__title">
-      <h1 class="mdl-card__title-text">Bienvenue!</h1>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <p>Hello! My name is Patrick Guelcher, and welcome to my little slice of the internet.</p>
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome!</h2>
+  </div>
+  <div class="mdl-card__media">
+    <img class="article-image" src="../../static/img/index-header.png" border="0" alt="">
+  </div>
+  <div class="mdl-grid portfolio-copy">
+    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
       <p>
-        I am a university student from the United States pursuing my passion for geography at the best school in the country: Virginia Tech.
-        Maps are amazing little time capsules that portray a moment in human history, and I've loved looking at them since I can remember.
-        Researching the history they show is truly fascinating. Now I want to combine that passion with the power of modern GIS to solve
-        whatever problem needs solving.
+        Hello! My name is Patrick Guelcher.
       </p>
-      <p>Check out the other pages on the site and learn more about me on my <a href="/resume">resume</a> and my background or take a look at some of my
-        GIS and cartographic work in my <a href="/portfolio">portfolio</a>.
+      <p>
+        I am obsessed with all things Geography and carried that passion to Virginia Tech where I graduated in 2016 with a Bachelor of Arts in Geography.
+        On my site you can find some more information <a href="/about">about me</a>, my current <a href="/portfolio">portfolio</a> (a little bare at the moment), and find out how you can <a href="/contact">contact me</a>.
+      </p>
+    </div>
+    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">About this site</h3>
+    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+      <p>
+        I first had the idea of building this website as an opportunity to teach myself some basic web development skills in late 2015.
+        Originally a set of static HTML pages, I re-wrote the entire thing using the Python microframework <a href="http://flask.pocoo.org/">Flask</a> to run the backend while continuing to expand my PYthon skills.
+        What you are looking at right now, the frontend, is using <a href="https://getmdl.io/">Material Design Lite</a> from Google, a web based version of their Android Material Design language.
+      </p>
+      <p>
+        This site runs on a "droplet", a cloud based VPS, from <a href="https://www.digitalocean.com/">Digital Ocean</a> running Ubuntu Server.
+        The source code for this website is viewable on my Github account <a href="https://github.com/aerovolts/patrick.guelcher.co">here</a>.
     </div>
   </div>
-
-</section>
+</div>
 {% endblock %}
 
-{% block footer %}{% include '_footer.html' %}{% endblock %}
+{% block footer %}{% include "_footer.html" %}{% endblock %}

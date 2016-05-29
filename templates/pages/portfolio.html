@@ -1,165 +1,65 @@
 {% extends "_base.html" %}
 
-{% block head %}{% include '_head.html' %}{% endblock %}
+{% block head %}{% include "_head.html" %}{% endblock %}
 
-{% block nav %}{% include '_nav.html' %}{% endblock %}
+{% block nav %}{% include "_nav.html" %}{% endblock %}
 
 {% block content %}
-<section class="section__center mdl-grid mdl-grid__no-spacing">
-  <!-- Square card -->
-  <style>
-  .demo-card-square.mdl-card {
-    height: 320px;
-  }
-  .demo-card-square > .mdl-card__title {
-    color: #000000;
-  }
-  </style>
+<!-- Thumbnails are 250px W 190px H -->
+<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card__media">
+    <img class="article-image" src="../../static/img/portfolio-thumbs/Virginia_Counties-thumb.png" border="0" alt="Virginia County Map Thumbnail">
+  </div>
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Virginia County Map</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    A map of Virginia showing all counties and independent cities.
+    <br />
+    <br />
+    <em>Note: Map shows independent cities prior to Bedford City's transition to town status within Bedford County.</em>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="../../static/img/portfolio/Virginia_Counties.pdf">View Full Size</a>
+  </div>
+</div>
 
-  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
+<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card__media">
+    <img class="article-image" src="../../static/img/portfolio-thumbs/2016_Election-thumb.png" border="0" alt="">
+  </div>
+  <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">2016 Election Maps</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    A set of interactive web maps showing the results of the 2016 U.S. Presidential Elections from the party primaries and caucuses up to the general election.
+    <br />
+    <br />
+    <br />
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://maps.pjrg.co/2016-election">Go to Maps <i class="fa fa-external-link" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+        <img class="article-image" src="../../static/img/portfolio-thumbs/Where_Lived-thumb.png" border="0" alt="">
+    </div>
     <div class="mdl-card__title">
-      <h4 class="mdl-card__title-text">Portfolio</h4>
+        <h2 class="mdl-card__title-text">Where I've Lived</h2>
     </div>
     <div class="mdl-card__supporting-text">
-      <p>Welcome to my portfolio. Contained within the categories below you will find examples of my work ranging from:</p>
-      <ul>
-        <li>Various personal cartographic projects</li>
-        <li>Results of advanced GIS class laboratory projects</li>
-        <li>Other related creations</li>
-      </ul>
-      <p>In addition to this page I have several other sites that showcase some of my work.</p>
-      <ul>
-        <li>Personal web-based map projects are hosted on another domain I own: <a href="http://maps.pjrg.co/">maps.pjrg.co</a></li>
-        <li>I contribute to <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, view my contributions on <a href="http://www.openstreetmap.org/user/pguelcher">my profile</a>.</li>
-      </ul>
+      An animated web map that shows where I have lived throughout my life from birth until present.
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
-  </div>
-
-  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-    <div class="mdl-card__title">
-      <h4 class="mdl-card__title-text">Hillshade Maps</h4>
+    <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://maps.pjrg.co/where-ive-lived">Go to Map <i class="fa fa-external-link" aria-hidden="true"></i></a>
     </div>
-    <div class="mdl-card__supporting-text">
-      <div class="mdl-grid">
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand portfolio-img" style="background: url('../../static/img/portfolio/Dane_County_WI_Hillshade.png'); background-size:cover;">
-          </div>
-          <div class="mdl-card__supporting-text test">
-            A topographic hillshade map of Dane County, Wisconsin, produced in ArcGIS using data from the <a href="http://nationalmap.gov/">USGS National Map</a>.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/Dane_County_WI_Hillshade.png" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand" style="background: url('../../static/img/portfolio/Loudon_County_VA_Hillshade.png'); background-size:cover;" >
-          </div>
-          <div class="mdl-card__supporting-text test">
-            A topographic hillshade map of Loudon County, Virginia, produced in ArcGIS using data from the <a href="http://nationalmap.gov/">USGS National Map</a>.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/Loudon_County_VA_Hillshade.png" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-    <div class="mdl-card__title">
-      <h4 class="mdl-card__title-text">Miscellaneous Maps</h4>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <div class="mdl-grid">
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand portfolio-img" style="background: url('../../static/img/portfolio/bma.png'); background-size:cover;">
-          </div>
-          <div class="mdl-card__supporting-text test">
-            Population density map of the Baltimore Metropolitan Area using population data and shapefiles from the US Census Bureau.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/bma.png" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand portfolio-img" style="background: url('../../static/img/portfolio/Virginia_Counties.png'); background-size:cover;">
-          </div>
-          <div class="mdl-card__supporting-text test">
-            A map of Virginia showing all counties and independent cities (Note: Map shows cities prior ot Bedford City's demotion to part of Bedford County)
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/Virginia_Counties.pdf" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-    <div class="mdl-card__title">
-      <h4 class="mdl-card__title-text">Laboratory Map Exercises</h4>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <div class="mdl-grid">
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand portfolio-img" style="background: url('../../static/img/portfolio/GNP_Montana_Fire_Risk.jpg'); background-size:cover;">
-          </div>
-          <div class="mdl-card__supporting-text test">
-            Fire risk analysis of a portion of Glacier National Park in Montana. Produced using ArcGIS using various raster and shapefile elements.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/GNP_Montana_Fire_Risk.jpg" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand portfolio-img" style="background: url('../../static/img/portfolio/Cattle_US_2012.jpg'); background-size:cover;">
-          </div>
-          <div class="mdl-card__supporting-text test">
-            A dot map of all cattle and calves in the contiguous United States, 2012.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/Cattle_US_2012.jpg" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-        <div class="demo-card-square mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand portfolio-img" style="background: url('../../static/img/portfolio/Hurricane_2005.png'); background-size:cover;">
-          </div>
-          <div class="mdl-card__supporting-text test">
-            Map of the paths that Hurricanes Katrina and Emily took in 2005 displaying Saffir-Simpson Scale category level along the routes.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="../../static/img/portfolio/Hurricane_2005.png" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              View Full Size
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</section>
+</div>
 {% endblock %}
 
-{% block footer %}{% include '_footer.html' %}{% endblock %}
+{% block footer %}{% include "_footer.html" %}{% endblock %}

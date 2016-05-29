@@ -8,12 +8,12 @@
       {% block nav %}{% endblock %}
 
       <main class="mdl-layout__content">
-        <div class="content">
+        <div class="mdl-grid portfolio-max-width">
           {% block content %}{% endblock %}
         </div>
+        {% block footer %}{% endblock %}
       </main>
 
-      {% block footer %}{% endblock %}
     </div>
   </body>
 </html>

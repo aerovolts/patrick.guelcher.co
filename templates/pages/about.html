@@ -1,0 +1,94 @@
+{% extends "_base.html" %}
+
+{% block head %}{% include "_head.html" %}{% endblock %}
+
+{% block nav %}{% include "_nav.html" %}{% endblock %}
+
+{% block content %}
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">About Me</h2>
+  </div>
+  <div class="mdl-card__media">
+    <img class="article-image" src="../../static/img/about-header.png" border="0" alt="About Header Image">
+  </div>
+  <div class="mdl-grid portfolio-copy">
+
+    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline"><i class="fa fa-graduation-cap"></i> Education</h3>
+    <div class="mdl-cell mdl-cell--10-col mdl-card__supporting-text no-padding ">
+      <p>
+        <strong>Virginia Polytechnic Institute and State University (Virginia Tech)</strong>
+        <br />
+        <em>August 2012 - May 2016</em>
+        <ul>
+          <li><strong>Bachelor of Arts, Geography</strong><br /><em>Concentration in Geospatial and Environmental Analysis</em></li>
+          <li>Minor, Meteorology</li>
+          <li>Certificate of Graduation, Virginia Tech Corps of Cadets</li>
+        </ul>
+      </p>
+    </div>
+
+    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline"><i class="fa fa-list" aria-hidden="true"></i> Skills</h3>
+    <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+      <div class="mdl-grid">
+        <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h6>Technical Skills</h6>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <em>Software</em>
+            <ul>
+              <li>ArcGIS Software Suite</li>
+              <li>ERDAS Imagine 2015</li>
+              <li>Microsoft Office Suite</li>
+            </ul>
+            <em>Technical</em>
+            <ul>
+              <li>Cartographic Design</li>
+              <li>Digitizing Data</li>
+              <li>Remote Sensing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h6>Languages</h6>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <em>Foreign</em>
+            <ul>
+              <li>French <br />(Intermediate Proficiency)</li>
+            </ul>
+            <em>Technical</em>
+            <ul>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h6>Professional Skills</h6>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <ul>
+              <li>Leadership</li>
+              <li>Project Management</li>
+              <li>Organization</li>
+              <li>Time Management</li>
+              <li>Team/Individual Worker</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}{% include "_footer.html" %}{% endblock %}
