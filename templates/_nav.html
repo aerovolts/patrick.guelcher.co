@@ -1,3 +1,14 @@
+<script>
+jQuery(function($) {
+  var path = window.location.href;
+  $('#nav a').each(function() {
+    if (this.href === path) {
+      $(this).addClass('is-active');
+    }
+  });
+});
+</script>
+
 <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
   <div class="mdl-layout__header-row portfolio-logo-row">
     <span class="mdl-layout__title">
@@ -7,8 +18,8 @@
     </span>
   </div>
   <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-      <a class="mdl-navigation__link is-active" href="/">Home</a>
+    <nav id="nav" class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+      <a class="mdl-navigation__link" href="/">Home</a>
       <a class="mdl-navigation__link" href="/about">About</a>
       <!-- <a class="mdl-navigation__link" href="/blog">Blog</a> -->
       <a class="mdl-navigation__link" href="/portfolio">Portfolio</a>
@@ -17,8 +28,8 @@
   </div>
 </header>
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-  <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-    <a class="mdl-navigation__link is-active" href="/">Home</a>
+  <nav id="nav" class="nav mdl-navigation mdl-typography--body-1-force-preferred-font">
+    <a class="mdl-navigation__link" href="/">Home</a>
     <a class="mdl-navigation__link" href="/about">About</a>
     <!-- <a class="mdl-navigation__link" href="/blog">Blog</a> -->
     <a class="mdl-navigation__link" href="/portfolio">Portfolio</a>
