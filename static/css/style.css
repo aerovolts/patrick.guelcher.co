@@ -3,9 +3,11 @@
 .contact-link {
   font-weight: 600;
 }
+
 .blanklist {
   list-style-type: none;
-  padding: 3px;
+  /* This seems to break the scrolling on the contacts page. */
+  /* padding: 3px; */
   /* margin-left: 20px; */
 }
 
