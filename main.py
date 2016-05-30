@@ -30,5 +30,5 @@ def portfolio():
     description = 'A portfolio of cartographic products produced by Patrick Guelcher in various software packages.'
     return render_template('pages/portfolio.html', author=author, year=year, credits=credits, title=title, description=description)
 
-if __name__ == '__main__':
+def main():
     app.run()
