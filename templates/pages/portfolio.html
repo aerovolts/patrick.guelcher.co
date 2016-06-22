@@ -1,83 +1,81 @@
 {% extends "_base.html" %}
 
-{% block head %}{% include "_head.html" %}{% endblock %}
-
 {% block nav %}{% include "_nav.html" %}{% endblock %}
 
+{% block title %}Portfolio | Patrick Guelcher{% endblock %}
+
 {% block content %}
-<!-- Thumbnails are 250px W 190px H -->
-<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-  <div class="mdl-card__media">
-    <img class="article-image" src="../../static/img/portfolio-thumbs/Virginia_Counties-thumb.png" border="0" alt="Virginia County Map Thumbnail">
-  </div>
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Virginia County Map</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    A map of Virginia showing all counties and independent cities.
-    <br />
-    <br />
-    <em>Note: Map shows independent cities prior to Bedford City's transition to town status within Bedford County.</em>
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="../../static/img/portfolio/Virginia_Counties.pdf" target="_blank">View Full Size</a>
-  </div>
-</div>
-
-<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-  <div class="mdl-card__media">
-    <img class="article-image" src="../../static/img/portfolio-thumbs/2016_Election-thumb.png" border="0" alt="">
-  </div>
-  <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">2016 Election Maps</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    A set of interactive web maps showing the results of the 2016 U.S. Presidential Elections from the party primaries and caucuses up to the general election.
-    <br />
-    <br />
-    <br />
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://maps.pjrg.co/2016-election" target="_blank">Go to Maps <i class="fa fa-external-link" aria-hidden="true"></i></a>
-  </div>
-</div>
-
-<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <!-- Thumbnails are 250px W 190px H -->
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
     <div class="mdl-card__media">
-        <img class="article-image" src="../../static/img/portfolio-thumbs/Where_Lived-thumb.png" border="0" alt="">
+      <img class="article-image" src="../../static/img/portfolio-thumbs/Virginia_Counties-thumb.png" border="0" alt="Virginia County Map Thumbnail">
     </div>
     <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">Where I've Lived</h2>
+      <h2 class="mdl-card__title-text">Virginia County Map</h2>
     </div>
     <div class="mdl-card__supporting-text">
-      An animated web map that shows where I have lived throughout my life from birth until present.
+      A map of Virginia showing all counties and independent cities.
       <br />
+      <br />
+      <em>Note: Map shows independent cities prior to Bedford City's transition to town status within Bedford County.</em>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="../../static/img/portfolio/Virginia_Counties.pdf" target="_blank">View Full Size</a>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="../../static/img/portfolio-thumbs/2016_Election-thumb.png" border="0" alt="">
+    </div>
+    <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">2016 Election Maps</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      A set of interactive web maps showing the results of the 2016 U.S. Presidential Elections from the party primaries and caucuses up to the general election.
       <br />
       <br />
       <br />
     </div>
     <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://maps.pjrg.co/where-ive-lived" target="_blank">Go to Map <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://maps.pjrg.co/2016-election" target="_blank">Go to Maps <i class="fa fa-external-link" aria-hidden="true"></i></a>
     </div>
-</div>
+  </div>
 
-<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-  <div class="mdl-card__media">
-    <img class="article-image" src="../../static/img/portfolio-thumbs/UnitedStates_Zip_Codes-thumb.png" border="0" alt="Virginia County Map Thumbnail">
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+      <div class="mdl-card__media">
+          <img class="article-image" src="../../static/img/portfolio-thumbs/Where_Lived-thumb.png" border="0" alt="">
+      </div>
+      <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Where I've Lived</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        An animated web map that shows where I have lived throughout my life from birth until present.
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://maps.pjrg.co/where-ive-lived" target="_blank">Go to Map <i class="fa fa-external-link" aria-hidden="true"></i></a>
+      </div>
   </div>
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">U.S. Zip Codes Map</h2>
+
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="../../static/img/portfolio-thumbs/UnitedStates_Zip_Codes-thumb.png" border="0" alt="Virginia County Map Thumbnail">
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">U.S. Zip Codes Map</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      A simple map of all zip codes in the Continental United States symbolized with twenty classes broken up using natural breaks.
+      <br />
+      <br />
+      <br />
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="../../static/img/portfolio/UnitedStates_Zip_Codes.pdf" target="_blank">View Full Size</a>
+    </div>
   </div>
-  <div class="mdl-card__supporting-text">
-    A simple map of all zip codes in the Continental United States symbolized with twenty classes broken up using natural breaks.
-    <br />
-    <br />
-    <br />
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="../../static/img/portfolio/UnitedStates_Zip_Codes.pdf" target="_blank">View Full Size</a>
-  </div>
-</div>
 {% endblock %}
-
-{% block footer %}{% include "_footer.html" %}{% endblock %}

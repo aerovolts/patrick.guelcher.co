@@ -1,5 +1,15 @@
 /* CUSTOM CSS */
 
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
 .contact-link {
   font-weight: 600;
 }
@@ -48,17 +58,27 @@
 }
 
 .portfolio-logo {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  /*
   background: url(../img/logo.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
   margin: auto auto 10px;
+  */
 }
 
 .is-compact .portfolio-logo {
+  /*
   height: 50px;
   width: 50px;
   margin-top: 7px;
+  */
+  font-size: 10px;
+  text-align: center;
+  font-weight: 100;
 }
 
 .portfolio-navigation-row {
